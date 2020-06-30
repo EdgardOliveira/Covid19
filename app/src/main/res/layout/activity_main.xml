@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/swtFebre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Tem Febre?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swtDorCabeca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Dor de cabeça?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtFebre"
+        app:layout_constraintTop_toBottomOf="@+id/swtFebre" />
+
+    <Switch
+        android:id="@+id/swtSecrecaoEspirros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Secreção/Espirros?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtDorCabeca"
+        app:layout_constraintTop_toBottomOf="@+id/swtDorCabeca" />
+
+    <Switch
+        android:id="@+id/swtGarganta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Dor de cabeça?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtSecrecaoEspirros"
+        app:layout_constraintTop_toBottomOf="@+id/swtSecrecaoEspirros" />
+
+    <Switch
+        android:id="@+id/swtTosseSeca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Tosse seca?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtGarganta"
+        app:layout_constraintTop_toBottomOf="@+id/swtGarganta" />
+
+    <Switch
+        android:id="@+id/swtDificuldadeResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Dificuldade Respiratória?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtTosseSeca"
+        app:layout_constraintTop_toBottomOf="@+id/swtTosseSeca" />
+
+    <Switch
+        android:id="@+id/swtDorCorpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Dor no corpo?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtDificuldadeResp"
+        app:layout_constraintTop_toBottomOf="@+id/swtDificuldadeResp" />
+
+    <Switch
+        android:id="@+id/swtDiarreia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Diarréia?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtDorCorpo"
+        app:layout_constraintTop_toBottomOf="@+id/swtDorCorpo" />
+
+    <Switch
+        android:id="@+id/swtPerdaAlfato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tem Perda de Alfato?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtDiarreia"
+        app:layout_constraintTop_toBottomOf="@+id/swtDiarreia" />
+
+    <Switch
+        android:id="@+id/swtContatoCOVID19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Teve Contato com algum caso de Covid19?"
+        android:textOff="NÃO"
+        android:textOn="SIM"
+        android:showText="true"
+        app:layout_constraintStart_toStartOf="@+id/swtPerdaAlfato"
+        app:layout_constraintTop_toBottomOf="@+id/swtPerdaAlfato" />
+
+    <TextView
+        android:id="@+id/txtvwTotalPontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total de Pontos: "
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/swtContatoCOVID19"
+        app:layout_constraintTop_toBottomOf="@+id/swtContatoCOVID19" />
+
+    <TextView
+        android:id="@+id/txtvwRisco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Risco: "
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/txtvwTotalPontos"
+        app:layout_constraintTop_toBottomOf="@+id/txtvwTotalPontos" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/coronavirus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
