@@ -12,10 +12,10 @@
 
 
 ## Risco Baixo
-<img src="https://github.com/EdgardOliveira/covid19/blob/master/imagens/1.png" alt="risco_baixo" style="width:500px;height:600px;">
+<img src="https://github.com/EdgardOliveira/covid19/blob/master/imagens/3.png" alt="risco_baixo" style="width:500px;height:600px;">
 
 ## Risco Médio
 <img src="https://github.com/EdgardOliveira/covid19/blob/master/imagens/2.png" alt="risco_medio" style="width:500px;height:600px;">
 
 ## Risco Alto
-<img src="https://github.com/EdgardOliveira/covid19/blob/master/imagens/3.png" alt="risco_alto" style="width:500px;height:600px;">
+<img src="https://github.com/EdgardOliveira/covid19/blob/master/imagens/1.png" alt="risco_alto" style="width:500px;height:600px;">
